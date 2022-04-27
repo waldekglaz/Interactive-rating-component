@@ -1,0 +1,45 @@
+.overlay {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.overlay__img {
+  width: 144px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+.overlay__feedback-msg {
+  font-size: 0.875rem;
+  color: $clr-Orange;
+  padding: 5px 12px;
+  background-color: $clr-Dark-Blue;
+  line-height: 22px;
+  border-radius: 22.5px;
+  margin-bottom: 1.5rem;
+}
+.overlay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+.overlay__text {
+  color: $clr-Light-Grey;
+  font-size: 14px;
+  line-height: 22px;
+}
+@media (min-width: 1024px) {
+  .overlay__img {
+    width: 162px;
+  }
+  .overlay__feedback-msg {
+    font-size: 0.9375rem;
+  }
+  .overlay h2 {
+    font-size: 1.75rem;
+  }
+  .overlay__text {
+    font-size: 0.9375rem;
+    padding: 0 5px;
+  }
+}

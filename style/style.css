@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Overpass", sans-serif;
+}
+
+.card,
+.overlay {
+  background: radial-gradient(98.96% 98.96% at 50% 0%, #232a34 0%, #181e27 100%);
+  padding: 1.5rem 1.5rem 2rem;
+  border-radius: 15px;
+  max-width: 327px;
+}
+
+.circle {
+  padding: 0.8125rem;
+  background-color: #252d37;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: none;
+}
+
+.star {
+  width: 40px;
+  height: 40px;
+}
+
+.star__icon {
+  width: 14px;
+  height: auto;
+}
+
+.card__title {
+  margin: 1rem 0 0.625rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.card__text {
+  font-weight: 400;
+  color: #959eac;
+  font-size: 0.875rem;
+  line-height: 22px;
+  margin-bottom: 1.5rem;
+}
+
+.rating-btns-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.rating__btn {
+  color: #7c8798;
+  font-size: 0.875rem;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.rating__btn:hover {
+  background-color: #7c8798;
+  color: white;
+}
+
+.btn-submit {
+  width: 100%;
+  color: white;
+  line-height: 18px;
+  font-size: 0.875rem;
+  padding: 12px 0;
+  letter-spacing: 1.86667px;
+  text-transform: uppercase;
+  background-color: #fb7413;
+  border: none;
+  border-radius: 22.5px;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: white;
+  color: #fb7413;
+}
+
+.checked {
+  background-color: white;
+  color: #fb7413;
+}
+
+@media (min-width: 1024px) {
+  .card,
+  .overlay {
+    max-width: 412px;
+    padding: 2rem;
+  }
+  .circle {
+    width: 51px;
+    height: 51px;
+  }
+  .star {
+    width: 48px;
+    height: 48px;
+  }
+  .card__title {
+    font-size: 1.75rem;
+  }
+  .card__text {
+    font-size: 0.9375rem;
+  }
+  .rating__btn {
+    font-size: 0.9375rem;
+  }
+  .btn-submit {
+    font-size: 0.9375rem;
+    padding: 14px 0;
+  }
+}
+
+.overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.overlay__img {
+  width: 144px;
+  height: auto;
+  margin-bottom: 1.5rem;
+}
+
+.overlay__feedback-msg {
+  font-size: 0.875rem;
+  color: #fb7413;
+  padding: 5px 12px;
+  background-color: #252d37;
+  line-height: 22px;
+  border-radius: 22.5px;
+  margin-bottom: 1.5rem;
+}
+
+.overlay h2 {
+  font-size: 1.5rem;
+  margin-bottom: 0.625rem;
+}
+
+.overlay__text {
+  color: #959eac;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+@media (min-width: 1024px) {
+  .overlay__img {
+    width: 162px;
+  }
+  .overlay__feedback-msg {
+    font-size: 0.9375rem;
+  }
+  .overlay h2 {
+    font-size: 1.75rem;
+  }
+  .overlay__text {
+    font-size: 0.9375rem;
+    padding: 0 5px;
+  }
+}
+
+.body {
+  background-color: #121417;
+  color: white;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.attribution a {
+  color: #959eac;
+  text-decoration: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.attribution a:hover {
+  color: #fb7413;
+}
+/*# sourceMappingURL=style.css.map */

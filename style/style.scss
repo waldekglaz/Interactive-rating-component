@@ -1,0 +1,33 @@
+@import "abstracts/variables";
+@import "base/reset";
+@import "base/typography";
+@import "components/card";
+@import "components/overlay";
+
+.body {
+  background-color: $clr-Very-Dark-Blue;
+  color: $clr-White;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.hidden {
+  display: none;
+}
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 2rem;
+  a {
+    color: $clr-Light-Grey;
+    text-decoration: none;
+    transition: 0.3s;
+    &:hover {
+      color: $clr-Orange;
+    }
+  }
+}

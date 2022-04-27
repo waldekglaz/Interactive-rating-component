@@ -13,11 +13,15 @@
     />
 
     <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style/style.css" />
+    <script defer src="js/formSubmit.js"></script>
   </head>
-  <body>
+  <body class="body">
     <!-- Rating state start -->
     <main class="card">
-      <div class="star circle"><img src="images/icon-star.svg" alt="" /></div>
+      <div class="star circle">
+        <img class="star__icon" src="images/icon-star.svg" alt="" />
+      </div>
       <h1 class="card__title">How did we do?</h1>
       <p class="card__text">
         Please let us know how we did with your support request. All feedback is
@@ -25,25 +29,25 @@
       </p>
       <form action="">
         <div class="rating-btns-container">
-          <button type="button" class="btn circle">1</button>
-          <button type="button" class="btn circle">2</button>
-          <button type="button" class="btn circle">3</button>
-          <button type="button" class="btn circle">4</button>
-          <button type="button" class="btn circle">5</button>
+          <button type="button" class="btn rating__btn circle">1</button>
+          <button type="button" class="btn rating__btn circle">2</button>
+          <button type="button" class="btn rating__btn circle">3</button>
+          <button type="button" class="btn rating__btn circle">4</button>
+          <button type="button" class="btn rating__btn circle">5</button>
         </div>
         <button type="submit" class="btn-submit">Submit</button>
       </form>
     </main>
 
     <!-- Rating state end -->
-    <div class="overlay">
+    <div class="overlay hidden">
       <img
         src="images/illustration-thank-you.svg"
         alt=""
         class="overlay__img"
       />
       <p class="overlay__feedback-msg">You selected 4 out of 5</p>
-      <p>Thank you!</p>
+      <h2>Thank you!</h2>
       <p class="overlay__text">
         We appreciate you taking the time to give a rating. If you ever need
         more support, don’t hesitate to get in touch!
